@@ -3,10 +3,11 @@ spring:
     name: service-items
 server:
   port: 8002
-  
-#service-products:
-#  ribbon:
-#    listOfServers: localhost:8001,localhost:9001
+
+#Si los puertos son dinamicos esto se debe comentar 
+service-products:
+  ribbon:
+    listOfServers: localhost:8001,localhost:9001
 
 eureka:
   client:
